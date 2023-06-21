@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .clip-button-outline {
+    clip-path: polygon(
+      8px 0%,
+      100% 0,
+      100% calc(100% - 8px),
+      calc(100% - 8px) 100%,
+      0 100%,
+      0% 8px
+    );
+  }
+  .clip-button-inline {
+    clip-path: polygon(
+      9px 1px,
+      calc(100% - 1px) 1px,
+      calc(100% - 1px) calc(100% - 9px),
+      calc(100% - 9px) calc(100% - 1px),
+      1px calc(100% - 1px),
+      1px 9px
+    );
+  }
+  .clip-menu-underline {
+    clip-path: polygon(4px 0, calc(100% - 4px) 0, 100% 100%, 0 100%);
+  }
+  .clip-modal-outline {
+    clip-path: polygon(
+      31px 0,
+      100% 0,
+      100% calc(100% - 31px),
+      calc(100% - 31px) 100%,
+      0 100%,
+      0 31px
+    );
+  }
+  .clip-modal-inline {
+    clip-path: polygon(
+      32px 2px,
+      calc(100% - 2px) 2px,
+      calc(100% - 2px) calc(100% - 32px),
+      calc(100% - 32px) calc(100% - 2px),
+      2px calc(100% - 2px),
+      2px 32px
+    );
+  }
+}
